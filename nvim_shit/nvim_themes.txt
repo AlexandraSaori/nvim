@@ -1,0 +1,27 @@
+/**Lista de los candidatos a ser temas de Nvim:
+**el signo (?) signifca que son buenos pero No sirven.
+**/
+
+=== Temas de bajo astral ===
+1. wombat256grf
+2. pulumi
+3. sonokai
+4. xcodedarkhc (?)
+5. xwcodewwdc (?) 
+6. nightfly 
+7. neon
+8. polar
+9. synthwave84
+10. plastic
+11. challenger_deep (?)
+12. rigel (?)
+13. edge 
+14. aurora
+15. eighties 
+
+=== Aquí hay Nivel ===
+//El debut de nvim fue con el tema nord, que ganó a pesar de no estar en la lista.
+1. Nord
+2. Seul256
+3. Dark One
+

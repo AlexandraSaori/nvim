@@ -1,0 +1,9 @@
+
+/** Colores para hacer que tu dwm & dmenu sean menos incómodos de ver (Según la percepción del usuario).
+**/
+
+//Las tonalidades de rosado van ordenadas del mas "fuerte" al más claro.
+col_red          = "#ff6961";
+col_pink         = "#dc8a99";
+col_rose         = "#de919f";
+col_quartz       = "#f8cdcd";
