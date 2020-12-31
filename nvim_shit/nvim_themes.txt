@@ -10,7 +10,7 @@
 5. xwcodewwdc (?) 
 6. nightfly 
 7. neon
-8. polar
+8. candid
 9. synthwave84
 10. plastic
 11. challenger_deep (?)
@@ -18,10 +18,15 @@
 13. edge 
 14. aurora
 15. eighties 
+16. taffy (?)
 
 === Aquí hay Nivel ===
 //El debut de nvim fue con el tema nord, que ganó a pesar de no estar en la lista.
 1. Nord
-2. Seul256
+2. Seoul256
 3. Dark One
+4. Polar
+5. cryslominsa
+6. chito
+7. spring-night
 

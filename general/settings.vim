@@ -28,6 +28,12 @@ set formatoptions-=cro             "Stop new line continution of comments.
 set timeoutlen=500                 "By default timeoutlen is 1000.
 set noshowmode                     "Hide default status line.
 set rnu                            "relative number errnu.
+set termguicolors                  "is for some color scheme shit.
+set bg=dark                        "some themes need it.
+
+"To prevent that termguicolors don't give black & white colors only.
+let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 
 "Lightline colosheme config
 let g:lightline = {
