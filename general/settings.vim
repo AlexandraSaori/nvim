@@ -28,7 +28,7 @@ set formatoptions-=cro             "Stop new line continution of comments.
 set timeoutlen=500                 "By default timeoutlen is 1000.
 set noshowmode                     "Hide default status line.
 set rnu                            "relative number errnu.
-set termguicolors                  "is for some color scheme shit.
+set termguicolors                  "is for some color scheme shit to correct the nord tone.
 set bg=dark                        "some themes need it.
 
 "To prevent that termguicolors don't give black & white colors only.
