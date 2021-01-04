@@ -29,7 +29,11 @@ set timeoutlen=500                 "By default timeoutlen is 1000.
 set noshowmode                     "Hide default status line.
 set rnu                            "relative number errnu.
 set termguicolors                  "is for some color scheme shit to correct the nord tone.
-set bg=dark                        "some themes need it.
+set bg=dark                        "Some themes need it to fix the color scheme.
+set hlsearch                       "Highlight search results.
+set incsearch                      "Incremental search to see results as you start typing the word."
+set titlestring=%t                 "To dsiplay the filename as title."
+set title                          "Set the filename as the title of the window."
 
 "To prevent that termguicolors don't give black & white colors only.
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
