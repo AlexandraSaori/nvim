@@ -30,7 +30,6 @@ set noshowmode                     "Hide default status line.
 set rnu                            "relative number errnu.
 set termguicolors                  "is for some color scheme shit.
 set bg=dark                        "some themes need it.
-colorscheme nord                   "Nord color scheme.
 
 "To prevent that termguicolors don't give black & white colors only.
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
