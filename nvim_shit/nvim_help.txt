@@ -1,6 +1,0 @@
-To unset a variable/command there are 3 ways(one of them should work):
-1. set nocommand
-2. set command&
-3. set command!
- reload the file after
-
