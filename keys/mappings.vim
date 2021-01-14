@@ -36,10 +36,10 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>":"\<TAB>"
 
 
 "Better window navigation
-"nnoremap <C-h> <C-w>h
-"nnoremap <C-j> <C-w>j
-"nnoremap <C-k> <C-w>k
-"nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 "nnoremam <Leader>o o<Esc>^Da
 "nnoremam <Leader>o o<Esc>^Da

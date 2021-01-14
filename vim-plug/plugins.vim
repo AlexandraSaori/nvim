@@ -20,5 +20,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'joshdick/onedark.vim'
   "Nord theme
   Plug 'arcticicestudio/nord-vim'
+  "Emmet plug 
+  Plug 'mattn/emmet-vim'
+  "Vim Commentary
+  Plug 'tpope/vim-commentary'
+  "Indentation
+  "Linter & Format Code (Web dev only)
 
   call plug#end()
