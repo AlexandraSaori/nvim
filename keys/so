@@ -50,12 +50,13 @@ tnoremap <Esc> <C-\><C-n>
 
 "Inicia la terminal en modo INSERTAR
 "Abre la terminal con <CTRL> + <t>
-au BufEnter * if &buftype == 'terminal' | :stopinsert | endif
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 function! OpenTerminal()
   split term://zsh
   resize 10
 endfunction
 nnoremap <c-t> :call OpenTerminal()<CR>
+autocmd BufLeave term://* stopinsert
 
 "Esconde el NERDTree con <CTRL> + <b>
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>

@@ -34,7 +34,7 @@ set hlsearch                       "Highlight search results.
 set incsearch                      "Incremental search to see results as you start typing the word."
 set titlestring=%t                 "To dsiplay the filename as title."
 set title                          "Set the filename as the title of the window."
-
+set hidden
 "To prevent that termguicolors don't give black & white colors only.
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
@@ -43,6 +43,7 @@ let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 let g:lightline = {
       \ 'colorscheme': 'nord',
       \ }
+
 
 "Ese comando aparentemente en vimscript
 au! BufWritePost $MYVIMRC source%  "Auto source when writing to init.vim alternatively you can run :source $MYVIMRC

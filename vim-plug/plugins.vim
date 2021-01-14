@@ -21,5 +21,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   "Nord theme
   Plug 'arcticicestudio/nord-vim'
 
-
-call plug#end()
+  call plug#end()
