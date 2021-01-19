@@ -7,8 +7,7 @@ set pumheight=10                   "Makes popup menu smaller.
 set ruler                          "Show the cursor position.
 set nowrap                         "Display long lines as one.
 set cmdheight=1                    "Bottom space to display messages and shit.
-set mouse=a                        "Enable the mouse.
-set splitbelow                     "Horizontal split will automatically be bellow.
+set mouse=a                        "Enable the mouse.set splitbelow                     "Horizontal split will automatically be bellow.
 set splitright                     "Vertical split will automatically be to the right.
 set t_Co=256                       "Support 256 colors.
 set tabstop=2                      "Insert two spaces for a tab.
@@ -35,15 +34,21 @@ set incsearch                      "Incremental search to see results as you sta
 set titlestring=%t                 "To dsiplay the filename as title."
 set title                          "Set the filename as the title of the window."
 set hidden
+
+"=== COLOR SCHEME CONFIG ===
 "To prevent that termguicolors don't give black & white colors only.
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 
+"=== LIHGTLINE CONFIG ===
 "Lightline colosheme config
 let g:lightline = {
       \ 'colorscheme': 'nord',
       \ }
 
+"=== EMMET PLUG CONFIG ===
+"We're replacing the <c-y> trigger for a simple , (comma)
+let g:user_emmet_leader_key=','
 
 "Ese comando aparentemente en vimscript
 au! BufWritePost $MYVIMRC source%  "Auto source when writing to init.vim alternatively you can run :source $MYVIMRC
