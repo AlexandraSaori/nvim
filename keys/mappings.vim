@@ -21,7 +21,6 @@ nnoremap <M-l>    :vertical resize +2<CR>
 " === TERMINAL ===
 " Regresa la terminal a modo NORMAL con esc
 tnoremap <Esc> <C-\><C-n>
-
 "Inicia la terminal en modo INSERTAR
 "Abre la terminal con <CTRL> + <t>
 au BufEnter * if &buftype == 'terminal' | :stopinsert | endif

@@ -14,17 +14,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'scrooloose/NERDTree'
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
-  "Lightlight 
+  " Lightline 
    Plug 'itchyny/lightline.vim'
-  "onedark theme
-  Plug 'joshdick/onedark.vim'
-  "Nord theme
+  " Nord theme
   Plug 'arcticicestudio/nord-vim'
-  "Emmet plug 
+  " One Dark theme
+  Plug 'joshdick/onedark.vim'
+  " Emmet plug 
   Plug 'mattn/emmet-vim'
-  "Vim Commentary
+  " Vim Commentary
   Plug 'tpope/vim-commentary'
-  "Indentation
-  "Linter & Format Code (Web dev only)
+  " Linter & Format Code (Web dev only)
+  
 
   call plug#end()
