@@ -35,6 +35,16 @@ set incsearch                      "Incremental search to see results as you sta
 set titlestring=%t                 "To dsiplay the filename as title."
 set title                          "Set the filename as the title of the window."
 set hidden
+set guifont=Fira\ Code:h12
+
+"=== BUILD IN NEOVIM OMNICOMPLETE ====
+"aparentemente ese funciona para todos pero si se quiere solo para algunos
+"lenguajes de utiliza las opciones de abajo
+set omnifunc=syntaxcomplete#Complete
+      " \ javascriptcomplete#CompleteJS 
+      " \ htmlcomplete#CompleteTags
+      " \ csscomplete#CompleteCSS
+      " \ phpcomplete#CompletePHP
 
 "=== COLOR SCHEME CONFIG ===
 "To prevent that termguicolors don't give black & white colors only.
@@ -43,6 +53,7 @@ let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 
 "=== LIHGTLINE CONFIG ===
 "Lightline colosheme config
+
 let g:lightline = {
       \ 'colorscheme': 'nord',
       \ }
@@ -53,6 +64,6 @@ let g:user_emmet_leader_key=','
 
 "Ese comando aparentemente en vimscript
 au! BufWritePost $MYVIMRC source%  "Auto source when writing to init.vim alternatively you can run :source $MYVIMRC
-
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "You can stop me, fuck you frog
 cmap W!! w !sudo tee%              

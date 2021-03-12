@@ -24,7 +24,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'mattn/emmet-vim'
   " Vim Commentary
   Plug 'tpope/vim-commentary'
-  " Linter & Format Code (Web dev only)
-  
-
-  call plug#end()
+call plug#end()
