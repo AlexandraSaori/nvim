@@ -35,16 +35,10 @@ set incsearch                      "Incremental search to see results as you sta
 set titlestring=%t                 "To dsiplay the filename as title."
 set title                          "Set the filename as the title of the window."
 set hidden
-set guifont=Fira\ Code:h12
 
 "=== BUILD IN NEOVIM OMNICOMPLETE ====
-"aparentemente ese funciona para todos pero si se quiere solo para algunos
-"lenguajes de utiliza las opciones de abajo
+"Activate build in autocompletion 
 set omnifunc=syntaxcomplete#Complete
-      " \ javascriptcomplete#CompleteJS 
-      " \ htmlcomplete#CompleteTags
-      " \ csscomplete#CompleteCSS
-      " \ phpcomplete#CompletePHP
 
 "=== COLOR SCHEME CONFIG ===
 "To prevent that termguicolors don't give black & white colors only.
@@ -56,7 +50,15 @@ let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 
 let g:lightline = {
       \ 'colorscheme': 'nord',
+      \ 'tab_component_function': {
+      \   'tabnum': 'LightlineWebDevIcons',
+     \ },
       \ }
+"Add icons in tabs
+function! LightlineWebDevIcons(n)
+  let l:bufnr = tabpagebuflist(a:n)[tabpagewinnr(a:n) - 1]
+  return WebDevIconsGetFileTypeSymbol(bufname(l:bufnr))
+endfunction
 
 "=== EMMET PLUG CONFIG ===
 "We're replacing the <c-y> trigger for a simple , (comma)

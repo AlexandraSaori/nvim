@@ -24,4 +24,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'mattn/emmet-vim'
   " Vim Commentary
   Plug 'tpope/vim-commentary'
+  "Nvim devicons
+  Plug 'ryanoasis/vim-devicons'
+
+
 call plug#end()
