@@ -65,6 +65,7 @@ let g:fzf_action = {
       \ 'ctrl-v': 'vsplit',
       \}
 
+
 "=== PRETTIER ===
 "Run :Neoformat or :Neoformat prettier in a supported file to run Prettier.
 "To have Neoformat run Prettier on save:

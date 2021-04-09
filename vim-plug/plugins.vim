@@ -26,6 +26,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-commentary'
   "Nvim devicons
   Plug 'ryanoasis/vim-devicons'
-
+  "Auto Pop-up menu
+  Plug 'skywind3000/vim-auto-popmenu'
+  Plug 'skywind3000/vim-dict'
 
 call plug#end()
