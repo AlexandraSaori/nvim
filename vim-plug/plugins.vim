@@ -16,18 +16,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'jiangmiao/auto-pairs'
   " Lightline 
    Plug 'itchyny/lightline.vim'
-  " Nord theme
-  Plug 'arcticicestudio/nord-vim'
-  " One Dark theme
-  Plug 'joshdick/onedark.vim'
   " Emmet plug 
   Plug 'mattn/emmet-vim'
   " Vim Commentary
   Plug 'tpope/vim-commentary'
-  "Nvim devicons
-  Plug 'ryanoasis/vim-devicons'
-  "Auto Pop-up menu
+  "Auto Pop-up menu & Dictionary
   Plug 'skywind3000/vim-auto-popmenu'
   Plug 'skywind3000/vim-dict'
+  "Vimi wiki
+  Plug 'vimwiki/vimwiki'
+  "=== VISUAL CUSTOMIZATION ===
+  " Theme 
+  Plug 'adrian5/oceanic-next-vim'
+  "Show icons in NERDTree
+  Plug 'ryanoasis/vim-devicons'
 
 call plug#end()

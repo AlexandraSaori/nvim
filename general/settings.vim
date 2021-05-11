@@ -38,33 +38,39 @@ set hidden                             "hidden
 set shortmess+=c                       "suppress annoy messages"
 set completeopt=menu,menuone,noselect  "don't select the first item."
 set cpt=.,k,w,b                        "source for dictionary, current or other loaded buffers, see ':help cpt' 
+filetype plugin on 
 
 "=== BUILD IN NEOVIM OMNICOMPLETE ====
 "Activate build in autocompletion 
 set omnifunc=syntaxcomplete#Complete
 
-" enable this plugin for filetypes, '*' for all files.
-let g:apc_enable_ft = {'text':1, 'markdown':1, '*':1}
+" enable this plugin for filetyapes, '*' for all files.
+let g:apc_enable_ft = { '*':1}
 
 "=== COLOR SCHEME CONFIG ===
 "To prevent that termguicolors don't give black & white colors only.
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 
+
 "=== LIHGTLINE CONFIG ===
 "Lightline colosheme config
 
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme':'oceanicnext',
       \ 'tab_component_function': {
       \   'tabnum': 'LightlineWebDevIcons',
-     \ },
+      \ },
       \ }
+
 "Add icons in tabs
 function! LightlineWebDevIcons(n)
   let l:bufnr = tabpagebuflist(a:n)[tabpagewinnr(a:n) - 1]
   return WebDevIconsGetFileTypeSymbol(bufname(l:bufnr))
 endfunction
+
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown','ext':'.md'}]
 
 "=== EMMET PLUG CONFIG ===
 "We're replacing the <c-y> trigger for a simple , (comma)
@@ -79,5 +85,6 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "Ese comando aparentemente en vimscript
 au! BufWritePost $MYVIMRC source%  "Auto source when writing to init.vim alternatively you can run :source $MYVIMRC
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 "You can stop me, fuck you frog
 cmap W!! w !sudo tee%              
