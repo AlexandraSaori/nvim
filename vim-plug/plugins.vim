@@ -23,8 +23,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   "Auto Pop-up menu & Dictionary
   Plug 'skywind3000/vim-auto-popmenu'
   Plug 'skywind3000/vim-dict'
+  "Conquer of Completion (coc)
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   "Vimi wiki
   Plug 'vimwiki/vimwiki'
+
   "=== VISUAL CUSTOMIZATION ===
   " Theme 
   Plug 'adrian5/oceanic-next-vim'

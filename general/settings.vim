@@ -76,6 +76,8 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 "We're replacing the <c-y> trigger for a simple , (comma)
 let g:user_emmet_leader_key=','
 
+
+
 "Para que el omnifunc se active con cada archivo php
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
