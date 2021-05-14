@@ -1,4 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "html", "js", "markdown"]
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "php", "html", "json", "python"],
+  "clangd.path": "/home/soad/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
 
 }

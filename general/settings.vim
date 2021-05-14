@@ -23,7 +23,7 @@ set showtabline=1                      "Always shows by default the selected num
 set nobackup                           "This is recommended by coc.
 set nowritebackup                      "This is recomended by coc.
 set updatetime=300                     "Faster completition.
-set clipboard=unnamedplus              "Copy paste between vim and everything else.
+set clipboard+=unnamedplus              "Copy paste between vim and everything else.
 set formatoptions-=cro                 "Stop new line continution of comments.
 set timeoutlen=500                     "By default timeoutlen is 1000.
 set noshowmode                         "Hide default status line.

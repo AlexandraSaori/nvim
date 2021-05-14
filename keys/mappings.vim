@@ -2,9 +2,17 @@
 " Command completition with <TAB>
 imap <expr><TAB> pumvisible() ? "\<C-n>":"\<TAB>"
 
+"To navigate beetween tabs with left alt and left/right arrows
+nmap <M-right>  :tabnext<CR>
+nmap <M-left>  :tabprev<CR>
+
 "To save file with: <CTRL> + <S> and keep insert mode active.
 nmap <C-s> :w<CR>
-imap <C-s> <Esc>:w<CR>a
+imap <C-s> <Esc>:w<CR>
+
+"To quit file with: <CTRL> + <q> .
+nmap <C-q> :q<CR>
+imap <C-q> <Esc>:q<CR>
 
 " ##  BUFFERS
 "Better buffer navigation with vim keys
@@ -12,6 +20,11 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+"Buffer navigation with ctrl ans arrow keys
+nmap <C-left>  <C-w>h
+nmap <C-down>  <C-w>j
+nmap <C-up>    <C-w>k
+nmap <C-right> <C-w>l
 
 "Use alt + hjkl to resize windows
 nmap <M-j>    :resize -2<CR>
@@ -49,12 +62,20 @@ nmap <silent> <C-b> :NERDTreeToggle<CR>
 " ctrl-n: open file in new tab.
 " ctrl-h: open file in horizontal buffer.
 " ctrl-v: open file in a vertical buffer.
-nmap <C-p> :FZF<CR>
+nmap <C-f> :FZF<CR>
 let g:fzf_action = {
-      \ 'ctrl-n': 'tab split',
+      \ 'ctrl-a': 'tab split',
       \ 'ctrl-h': 'split',
       \ 'ctrl-v': 'vsplit',
       \}
+"History source for fzf
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+"Some mappings for fzf functions
+map <leader>v :Files<CR>
+map <leader>b :Buffers<CR>
+nnoremap <leader>g :Rg<CR>
+nnoremap <leader>t :Tags<CR>
+nnoremap <leader>m :Marks<CR>
 
 "## AUTOPOPUP MENU
 "Better nav for omnicomplete / completition menu

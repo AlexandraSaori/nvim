@@ -20,6 +20,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'mattn/emmet-vim'
   " Vim Commentary
   Plug 'tpope/vim-commentary'
+  "FZF integration with nvim
+  Plug 'junegunn/fzf.vim'
   "Auto Pop-up menu & Dictionary
   Plug 'skywind3000/vim-auto-popmenu'
   Plug 'skywind3000/vim-dict'
@@ -27,7 +29,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   "Vimi wiki
   Plug 'vimwiki/vimwiki'
-
   "=== VISUAL CUSTOMIZATION ===
   " Theme 
   Plug 'adrian5/oceanic-next-vim'

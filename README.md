@@ -14,7 +14,6 @@
 ## OTHERS
 
 ### COC extensions instaladas :
-- coc-clangd (C, C++)
 - coc-html   (HTML)
 - coc-json  (JSON Files)
 - coc-tsserver (Javascript)
@@ -23,6 +22,7 @@
 
 ### Posibles extensiones a instalar:
 - coc-tabnine (dice ser "all-language autocompleter") 
+- coc-clangd (C, C++) 
 - coc-pyright (Python)
 - coc-lua-lsp (Lua)
 - coc-texlab (Latex)
