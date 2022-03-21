@@ -22,8 +22,8 @@ set cursorline                         "Enable highlightng of the current line.
 set showtabline=1                      "Always shows by default the selected number of tabs.
 set nobackup                           "This is recommended by coc.
 set nowritebackup                      "This is recomended by coc.
+set clipboard=unnamedplus              "To use clipboard"
 set updatetime=300                     "Faster completition.
-set clipboard+=unnamedplus              "Copy paste between vim and everything else.
 set formatoptions-=cro                 "Stop new line continution of comments.
 set timeoutlen=500                     "By default timeoutlen is 1000.
 set noshowmode                         "Hide default status line.
@@ -51,7 +51,6 @@ let g:apc_enable_ft = { '*':1}
 "To prevent that termguicolors don't give black & white colors only.
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
-
 
 "=== LIHGTLINE CONFIG ===
 "Lightline colosheme config
